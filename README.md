@@ -8,7 +8,7 @@ Este é um projeto de Web Crawler desenvolvido em Node.js que permite extrair in
 
 ## Pré-requisitos
 
-- Node.js (versão 12 ou superior
+- Node.js (versão 12 ou superior)
 - MySQL
 
 
