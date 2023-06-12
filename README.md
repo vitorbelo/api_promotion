@@ -20,7 +20,7 @@ Este é um projeto de Web Crawler desenvolvido em Node.js que permite extrair in
 - Fornece endpoints de API para interagir com o sistema.
 - Atualiza os dados de preço automaticamente em intervalos regulares.
 
-## Installation
+## Instalação
 
 Clone o repositório para o seu ambiente local:
 
