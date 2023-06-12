@@ -1,0 +1,26 @@
+# Arquivos e pastas a serem ignorados pelo Git
+
+# Arquivos de configuração
+config.js
+
+# Arquivos de dependências
+node_modules/
+
+# Arquivos de log
+logs/
+
+# Arquivos gerados pelo ambiente de desenvolvimento
+dist/
+build/
+
+# Arquivos de credenciais sensíveis
+.env
+
+# Arquivos de backup
+*.bak
+
+# Outros arquivos e pastas
+.idea/
+.vscode/
+*.log
+edit.txt
