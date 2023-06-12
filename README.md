@@ -2,7 +2,7 @@
 ## _API busca preços_
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://app.travis-ci.com/vitorbelo/api_promotion.svg?branch=master)](https://app.travis-ci.com/vitorbelo/api_promotion)
 
 Este é um projeto de Web Crawler desenvolvido em Node.js que permite extrair informações de preços de produtos de sites-alvo específicos. O Web Crawler usa técnicas de Web Scraping para coletar os dados de preço e os armazena em um banco de dados para posterior acesso e análise.
 
