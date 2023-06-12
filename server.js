@@ -4,6 +4,12 @@ const mysql = require('mysql');
 
 const app = express();
 
+require('dotenv').config();
+
+const jwt = require('jsonwebtoken');
+const secretKey = process.env.SECRET_KEY;
+
+
 app.use(bodyParser.json());
 
 // Configurações da conexão com o banco de dados
@@ -26,8 +32,24 @@ connection.connect(error => {
   }
 });
 
+const authenticate = (req, res, next) => {
+  const token = req.headers.authorization;
+
+  if (!token) {
+    return res.status(401).json({ message: 'Token de acesso não fornecido' });
+  }
+
+  jwt.verify(token, secretKey, (err, decoded) => {
+    if (err) {
+      return res.status(401).json({ message: 'Token de acesso inválido' });
+    }
+    req.user = decoded;
+    next();
+  });
+};
+
 // Rota para adicionar os preços dos produtos rastreados
-app.post('/tracked_products', (req, res) => {
+app.post('/tracked_products', authenticate, (req, res) => {
   const { prices } = req.body;
 
   // Inserir cada preço na tabela
