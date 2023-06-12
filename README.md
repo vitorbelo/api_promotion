@@ -8,7 +8,7 @@ Este é um projeto de Web Crawler desenvolvido em Node.js que permite extrair in
 
 ## Pré-requisitos
 
-- Node.js (versão 12 ou superior
+- Node.js (versão 12 ou superior)
 - MySQL
 
 
@@ -20,7 +20,7 @@ Este é um projeto de Web Crawler desenvolvido em Node.js que permite extrair in
 - Fornece endpoints de API para interagir com o sistema.
 - Atualiza os dados de preço automaticamente em intervalos regulares.
 
-## Installation
+## Instalação
 
 Clone o repositório para o seu ambiente local:
 
